@@ -1,8 +1,11 @@
-﻿int age = 20;
-age = 25;
-float height = 5.7f;
-double weight = 70.5;
-char gender = 'M';
-string name = "Alex Bean";
-bool isStudent = true;
-Console.WriteLine(isStudent);
+﻿Console.WriteLine("Enter your name:");
+string name = Console.ReadLine();
+Console.WriteLine("Hello, " + name);
+
+Console.WriteLine("Guess a number between 1 and 10:");
+int firstGuess = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Make another guess:");
+int secondGuess = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("The sum of your guesses is: " + (firstGuess + secondGuess));
+
+
