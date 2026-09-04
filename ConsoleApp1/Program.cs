@@ -1,11 +1,26 @@
-﻿Console.WriteLine("Enter your name:");
-string name = Console.ReadLine();
-Console.WriteLine("Hello, " + name);
+﻿int a = 10;
+int b = 3;
 
-Console.WriteLine("Guess a number between 1 and 10:");
-int firstGuess = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Make another guess:");
-int secondGuess = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("The sum of your guesses is: " + (firstGuess + secondGuess));
+Console.WriteLine("Addition: " + (a + b));
+Console.WriteLine("Subtraction: " + (a - b));
+Console.WriteLine("Multiplication: " + (a * b));
+Console.WriteLine("Division: " + (a / b)); 
+Console.WriteLine("Modulus: " + (a % b));
+
+int x = 10;
+int y = 20;
+
+Console.WriteLine(x == y);
+Console.WriteLine(x != y);
+Console.WriteLine(x > y);
+Console.WriteLine(x < y);
+Console.WriteLine(x >= y);
+Console.WriteLine(x <= y);
 
 
+int age = 17;
+bool hasId = true;
+
+Console.WriteLine(age >= 18 && hasId);
+Console.WriteLine(age >=18 || hasId);
+Console.WriteLine(!hasId);
