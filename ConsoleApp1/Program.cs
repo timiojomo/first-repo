@@ -1,6 +1,5 @@
-﻿int i = 1;
-do 
+﻿int[] numbers = { 1, 2, 3, 4, 5 };
+foreach (int number in numbers)
 {
-    Console.WriteLine(i);
-    i++;
-} while (i <= 10);
+    Console.WriteLine(number);
+}
