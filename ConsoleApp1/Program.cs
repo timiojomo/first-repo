@@ -1,26 +1,49 @@
-﻿int a = 10;
-int b = 3;
+﻿int age = 16;
 
-Console.WriteLine("Addition: " + (a + b));
-Console.WriteLine("Subtraction: " + (a - b));
-Console.WriteLine("Multiplication: " + (a * b));
-Console.WriteLine("Division: " + (a / b)); 
-Console.WriteLine("Modulus: " + (a % b));
+if (age >= 18)
+{
+    Console.WriteLine("You are eligible to vote.");
+}
+else
+{
+    Console.WriteLine("You are not eligible to vote.");
+}
 
-int x = 10;
-int y = 20;
+int marks = 75;
 
-Console.WriteLine(x == y);
-Console.WriteLine(x != y);
-Console.WriteLine(x > y);
-Console.WriteLine(x < y);
-Console.WriteLine(x >= y);
-Console.WriteLine(x <= y);
+if (marks >= 90)
+{
+    Console.WriteLine("Grade: A");
+}
+else if (marks >= 75)
+{
+    Console.WriteLine("Grade: B");
+}
+else if (marks >= 50)
+{
+    Console.WriteLine("Grade: C");
+}
+else
+{
+    Console.WriteLine("Grade: F");
+}
 
-
-int age = 17;
-bool hasId = true;
-
-Console.WriteLine(age >= 18 && hasId);
-Console.WriteLine(age >=18 || hasId);
-Console.WriteLine(!hasId);
+int menuChoice = 4;
+switch (menuChoice)
+{
+    case 1:
+        Console.WriteLine("Yam and beans.");
+        break;
+    case 2:
+        Console.WriteLine("Rice and stew.");
+        break;
+    case 3:
+        Console.WriteLine("Jollof rice and chicken.");
+        break;
+    case 4:
+        Console.WriteLine("Pounded yam and egusi soup.");
+        break;
+    default:
+        Console.WriteLine("Invalid option selected.");
+        break;
+}
