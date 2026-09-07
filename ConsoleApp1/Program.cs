@@ -1,49 +1,12 @@
-﻿int age = 16;
-
-if (age >= 18)
+﻿for(int i = 1; i <= 5; i++)
 {
-    Console.WriteLine("You are eligible to vote.");
-}
-else
-{
-    Console.WriteLine("You are not eligible to vote.");
+    Console.WriteLine($"Iteration {i}");
 }
 
-int marks = 75;
-
-if (marks >= 90)
+for (int i = 1; i <= 10; i++)
 {
-    Console.WriteLine("Grade: A");
-}
-else if (marks >= 75)
-{
-    Console.WriteLine("Grade: B");
-}
-else if (marks >= 50)
-{
-    Console.WriteLine("Grade: C");
-}
-else
-{
-    Console.WriteLine("Grade: F");
-}
-
-int menuChoice = 4;
-switch (menuChoice)
-{
-    case 1:
-        Console.WriteLine("Yam and beans.");
-        break;
-    case 2:
-        Console.WriteLine("Rice and stew.");
-        break;
-    case 3:
-        Console.WriteLine("Jollof rice and chicken.");
-        break;
-    case 4:
-        Console.WriteLine("Pounded yam and egusi soup.");
-        break;
-    default:
-        Console.WriteLine("Invalid option selected.");
-        break;
+    for (int j = 1; j <=10; j++)
+    {
+        Console.WriteLine($"{i} x {j} = {i * j}");
+    }
 }
