@@ -1,11 +1,6 @@
-﻿string password = "abcd1234";
-
-Console.WriteLine("Enter your password:");
-string input = Console.ReadLine();
-
-while (input != password)
+﻿int i = 1;
+do 
 {
-    Console.WriteLine("Incorrect password. Please try again:");
-    input = Console.ReadLine();
-}
-Console.WriteLine("Login successful.");
+    Console.WriteLine(i);
+    i++;
+} while (i <= 10);
