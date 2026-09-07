@@ -1,23 +1,27 @@
-﻿static void Greet(string name = "User")
+﻿static void ChangeValue(ref int x)
 {
-    Console.WriteLine($"Hello, {name}! Welcome to the program!");
+    x = 20;
 }
 
-Greet();
-Greet("Joan");
-
-static void Add(int a, int b)
+static void ReferenceNumber()
 {
-    int sum = a + b;
-    Console.WriteLine($"{a} + {b} = {sum}");
+    int num = 10;
+    ChangeValue(ref num);
+    Console.WriteLine(num);
 }
 
-Add(5, 9);
+ReferenceNumber();
 
-static int Multiply(int a, int b)
+static void GetValue(out int x)
 {
-    return a * b;
+    x = 30;
 }
 
-int result = Multiply(4, 7);
-Console.WriteLine($"4 x 7 = {result}");
+static void OutNumber()
+{
+    int num;
+    GetValue(out num);
+    Console.WriteLine(num);
+}
+
+OutNumber();
