@@ -1,12 +1,11 @@
-﻿for(int i = 1; i <= 5; i++)
-{
-    Console.WriteLine($"Iteration {i}");
-}
+﻿string password = "abcd1234";
 
-for (int i = 1; i <= 10; i++)
+Console.WriteLine("Enter your password:");
+string input = Console.ReadLine();
+
+while (input != password)
 {
-    for (int j = 1; j <=10; j++)
-    {
-        Console.WriteLine($"{i} x {j} = {i * j}");
-    }
+    Console.WriteLine("Incorrect password. Please try again:");
+    input = Console.ReadLine();
 }
+Console.WriteLine("Login successful.");
