@@ -1,21 +1,15 @@
-﻿int[] numbers = { 10, 20, 30, 40, 50 };
-Console.WriteLine(numbers[2]);
+﻿double height, width, glassArea, woodLength;
 
-for(int i = 0; i < numbers.Length; i++)
-{
-    Console.WriteLine(numbers[i]/10);
-}
+Console.WriteLine("Enter the height of the window in metres:");
+height = double.Parse(Console.ReadLine());
 
-foreach(int number in numbers)
-{
-    Console.WriteLine(number * 2);
-}
+Console.WriteLine("Enter the width of the window in metres:");
+width = double.Parse(Console.ReadLine());
 
-// 2D array
-int[,] matrix = 
-{ 
-    { 1, 2, 3 }, 
-    { 4, 5, 6 } 
-};
+glassArea = 2 * (height * width);
 
-Console.WriteLine(matrix[0, 1]);
+woodLength = 2 * (height + width) * 3.25;
+
+Console.WriteLine($"The area of the glass is: {glassArea} square metres");
+
+Console.WriteLine($"The length of wood needed is: {woodLength} feet");
